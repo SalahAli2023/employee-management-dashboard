@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Employee Management Dashboard</h1>
+        <div class="second-container">
+            <h2>Insert Employee Data</h2>
+            <form id="employeeForm">
+                <div class="form-group">
+                    <label for="name">Employee Name</label>
+                    <input type="text" name="nm" id="name"  placeholder="Enter full name">
+                    <div id="nameErrorMsg" class="error">Please enter a valid name (letters only)</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="role">Role</label>
+                    <input type="text" id="role" placeholder="Enter employee role">
+                    <div id="roleErrorMsg" class="error">Please enter a valid role</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="status">Status</label>
+                    <select class="status">
+                        <option value="">Select status</option>
+                        <option value="Active">Active</option>
+                        <option value="On Leave">On Leave</option>
+                        <option value="Terminated">Terminated</option>
+                    </select>
+                    <div id="statusErrorMsg" class="error">Please select a status</div>
+                </div>
+
+                <button type="submit" id="addEmployeeBtN">Add Employee</button>
+            </form>
+        </div>
+        
+        <div  class="second-container" >
+            <h2>Employee Data Table</h2>
+            <table id="employeeTable">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="employeeTableBody">
+                    <!-- Employee rows will be inserted here -->
+                </tbody>
+            </table>
+            <div class="counters">Employees count: <span id="activeCount">0</span></div>
+            <button class="show-trash-btn" id="showTrashBtn">Show Trash Bin</button>
+        </div>
+        
+        
+        <div class="trash-container" id="trashContainer">
+            <h2>Trash Bin</h2>
+            <table id="trashTable">
+                <thead>
+                    <tr>
+                        <th>Employee Name</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="trashTableBody">
+                    <!-- Trash rows will be inserted here -->
+                </tbody>
+            </table>
+            <div class="counters">Employees in Trash: <span id="trashCount">0</span></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body> 
+</html>
+
