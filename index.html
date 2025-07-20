@@ -109,6 +109,8 @@
                     <tr>
                         <th>Full Name</th>
                         <th>Role</th>
+                        <th>Salary</th>
+                        <th>Bonus</th>
                         <th>Status</th>
                         <th>Actions</th>
                     </tr>
@@ -129,6 +131,8 @@
                     <tr>
                         <th>Employee Name</th>
                         <th>Role</th>
+                        <th>Salary</th>
+                        <th>Bonus</th>
                         <th>Status</th>
                         <th>Actions</th>
                     </tr>
@@ -140,6 +144,21 @@
             <div class="counters">Employees in Trash: <span id="trashCount">0</span></div>
         </div>
     </div>
+
+    <!-- Bonus Modal -->
+    <div id="bonusModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add Bonus</h2>
+            <div class="form-group">
+                <label for="bonusPercentage">Bonus Percentage</label>
+                <input type="number" id="bonusPercentage" placeholder="Enter percentage" min="0" max="100">
+                <div id="bonusErrorMsg" class="error">Please enter a valid percentage (0-100)</div>
+            </div>
+            <button id="applyBonusBtn">Apply Bonus</button>
+        </div>
+    </div>
+
     <script src="main.js"></script>
 </body> 
 </html>
