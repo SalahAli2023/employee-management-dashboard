@@ -29,6 +29,13 @@
                     <div id="roleErrorMsg" class="error">Please enter a valid role</div>
                 </div>
 
+                <!-- Salary -->
+                <div class="form-group">
+                    <label for="salary">Salary (R)</label>
+                    <input type="number" id="salary" placeholder="Enter salary" min="0">
+                    <div id="salaryErrorMsg" class="error">Please enter a valid salary (numbers only)</div>
+                </div>
+
                 <!-- status -->
                 <div class="form-group">
                     <label for="status">Status</label>
@@ -44,6 +51,8 @@
                 <button type="submit" id="addEmployeeBtn">Add Employee</button>
             </form>
         </div>
+
+        
         <!-- Table Section -->
         <div  class="section-container" >
             <h2>Employee Data Table</h2>
