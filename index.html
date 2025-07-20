@@ -52,7 +52,55 @@
             </form>
         </div>
 
-        
+        <!-- Search and Filter Section -->
+        <div class="section-container">
+            <div class="filter-section">
+                <h2>Search & Filter</h2>
+                <div class="filter-controls">
+                    <div class="form-group">
+                        <label for="searchName">Search by Name</label>
+                        <input type="text" id="searchName" placeholder="Enter employee name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="filterRole">Filter by Role</label>
+                        <input type="text" id="filterRole" placeholder="Enter role">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="filterStatus">Filter by Status</label>
+                        <select id="filterStatus">
+                            <option value="">All Statuses</option>
+                            <option value="Active">Active</option>
+                            <option value="On Leave">On Leave</option>
+                            <option value="Terminated">Terminated</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="filterSalaryMin">Salary Range</label>
+                        <div class="range-inputs">
+                            <input type="number" id="filterSalaryMin" placeholder="Min" min="0">
+                            <span>to</span>
+                            <input type="number" id="filterSalaryMax" placeholder="Max" min="0">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="filterBonusMin">Bonus Range</label>
+                        <div class="range-inputs">
+                            <input type="number" id="filterBonusMin" placeholder="Min" min="0">
+                            <span>to</span>
+                            <input type="number" id="filterBonusMax" placeholder="Max" min="0">
+                        </div>
+                    </div>
+                    
+                    <button id="resetFiltersBtn">Reset Filters</button>
+                    <button id="deleteThresholdBtn" class="btn-danger">Delete Employees ≤ 20,000</button>
+                </div>
+            </div>
+        </div>
+
         <!-- Table Section -->
         <div  class="section-container" >
             <h2>Employee Data Table</h2>
