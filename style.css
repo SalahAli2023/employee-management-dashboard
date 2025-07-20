@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
     background-color: white;
     padding: 20px;
@@ -91,6 +91,13 @@ button:hover {
     background-color: #7f8c8d;
 }
 
+.btn-bonus {
+    background-color: #22902d;
+}
+
+.btn-bonus:hover {
+    background-color: #41bb59;
+}
 
 .filter-section {
     margin-bottom: 20px;
@@ -112,15 +119,7 @@ button:hover {
     flex: 1;
 }
 
-.payroll-summary {
-    background-color: #111133;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 4px;
-    margin-bottom: 15px;
-    font-weight: 600;
-    text-align: right;
-}
+
 
 table {
 
@@ -143,6 +142,17 @@ th {
 
 tr:hover {
     background-color: #eaeaea;
+}
+
+.tb-footer{
+    background-color: #111133;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
 }
 
 .badge {
