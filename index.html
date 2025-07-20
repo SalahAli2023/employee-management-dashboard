@@ -9,22 +9,27 @@
 
 <body>
     <div class="container">
-        <h1>Employee Management Dashboard</h1>
-        <div class="second-container">
+        <h1>Employee Management CRUD</h1>
+
+        <!-- Form Section -->
+        <div class="section-container">
             <h2>Insert Employee Data</h2>
             <form id="employeeForm">
+                <!-- name -->
                 <div class="form-group">
                     <label for="name">Employee Name</label>
                     <input type="text" name="nm" id="name"  placeholder="Enter full name">
                     <div id="nameErrorMsg" class="error">Please enter a valid name (letters only)</div>
                 </div>
                 
+                <!-- role -->
                 <div class="form-group">
                     <label for="role">Role</label>
                     <input type="text" id="role" placeholder="Enter employee role">
                     <div id="roleErrorMsg" class="error">Please enter a valid role</div>
                 </div>
 
+                <!-- status -->
                 <div class="form-group">
                     <label for="status">Status</label>
                     <select class="status">
@@ -36,11 +41,11 @@
                     <div id="statusErrorMsg" class="error">Please select a status</div>
                 </div>
 
-                <button type="submit" id="addEmployeeBtN">Add Employee</button>
+                <button type="submit" id="addEmployeeBtn">Add Employee</button>
             </form>
         </div>
-        
-        <div  class="second-container" >
+        <!-- Table Section -->
+        <div  class="section-container" >
             <h2>Employee Data Table</h2>
             <table id="employeeTable">
                 <thead>
@@ -59,7 +64,7 @@
             <button class="show-trash-btn" id="showTrashBtn">Show Trash Bin</button>
         </div>
         
-        
+        <!-- Trash Bin Section -->
         <div class="trash-container" id="trashContainer">
             <h2>Trash Bin</h2>
             <table id="trashTable">
